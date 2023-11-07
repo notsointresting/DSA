@@ -1,0 +1,53 @@
+07-11-23
+Linear Search Algorithm
+Algorithm:-
+1) Create a variable position with the value 0
+2) Check whether the number at index position in card equals query.
+3) if it does, position is the answer and can be returned from the function.
+4) if not, increment the value of position by 1 and repeat steps 2 to 5 till we reach the last position.
+5) If the number was not found, return -1.
+
+Algorithm is simply list of statements which can be converted into code and executed by computer on different sets of inputs.
+
+-----
+Binary Search Algorithm
+
+1) Find the middle element of the list
+2) If it matches queried number, return the middle positioon as the answer.
+3) If it is less than the queried number, then search the first half of the list.
+4) If it is greater than the queried number, then search the second half of the list.
+5) If no more elements remain, return -1
+
+TestCase analyze:-
+nums = [-1,0,3,5,9,12]
+target = 9
+
+Output = -1
+Expected = 4
+
+
+breaking down the code, to identify mistake.
+
+left = 0
+right = len(nums) -1 = 5
+
+while 0 <= 6:
+    mid = (4+4)//2
+    mid_number = nums[mid] = num[4] = 9
+
+    if 9 == 9:
+        Yes it is.
+        return the mid that is position.
+    elif 5 < target:
+        Yes it is,consider this list.
+        nums = [-1,0,3,5,9,12]
+                L,     M   R
+        L = mid + 1 = 4
+    elif 12 > target:
+        Yes it is,consider this list
+        nums = [-1,0,3,5,9,12]
+                         L MR
+        R = mid-1 = 4
+
+if num not in list
+return -1
